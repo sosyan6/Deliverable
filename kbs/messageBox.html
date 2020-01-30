@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';" />
+		<title>messageBox</title>
+		<script src = "messageBox.js"></script>
+		<style>
+			body {
+				background-color: #333;
+			}
+			div#message {
+				color: #fff;
+				word-wrap: break-word;
+			}
+			a#close {
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				width: 15px;
+				height: 15px;
+				border: #fff solid 1px;
+				background-color: #fff;
+				color: #333;
+				text-align: center;
+				line-height: 15px;
+				font-weight: bold;
+				transition: ease 0.1s;
+				cursor: default;
+				-webkit-user-select: none;
+			}
+			a#close:hover {
+				background-color: #f13838;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id = "message">
+		</div>
+		<a id = "close">x</a>
+	</body>
+</html>
